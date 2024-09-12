@@ -1,0 +1,102 @@
+body {
+    /*Generic configuration for all body*/
+    background-color: #9DBEBB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    /*Size and configuration for the FORM*/
+    display: flex;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.left-side-container {
+    /*Container RED*/
+    background-color: #aa0e0f;
+    padding: 30px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    color: white;
+}
+
+.form-label {
+    /*Style for all Labels*/
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.input-style {
+    /*Style for all Inputs*/
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 80%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3em;
+}
+
+.input-style::placeholder {
+    color: #FFFFFF !important;
+    opacity: 10;
+}
+
+.input-style:focus {
+    outline: none;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.right-side-container {
+    /*Container Orange*/
+    background-color: #FFB039;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+}
+
+.duck-image {
+    /*Duck image*/
+    position: absolute;
+    left: 45vw;
+    top: 29vh;
+}
+
+.btn-submit {
+    /* Button Send Message*/
+    position: absolute;
+    width: 202px;
+    height: 48px;
+    left: 33vw;
+    top: 69vh;
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #468189;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+}

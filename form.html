@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Duck Form</title>
@@ -11,7 +16,25 @@
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <form class="form-container">
+            <div class="left-side-container"> <!--Container RED-->
+                <label for="full-name" class="form-label">Full Name</label>
+                <input type="text" name="full-name" id="full-name" class="input-style" required>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" class="input-style" required>
+                <label for="subject" class="form-label">Message Regarding</label>
+                <input type="text" id="subject" name="subject" class="input-style" required>
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" class="input-style"
+                    required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </div><!-- END Container RED-->
+            <div class="right-side-container"><!--Container ORANGE-->
+                <img src="images/duck-image.png" alt="Duck Image" class="duck-image">
+            </div><!--END Container ORANGE-->
+        </form>
+    </main>
     <footer></footer>
 </body>
 
